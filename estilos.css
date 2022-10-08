@@ -1,0 +1,340 @@
+body{       
+    background-color:white;
+    margin: 0px;
+}
+
+ul {
+    list-style: none;
+}
+
+i{
+    color: black;
+}
+
+#container {
+    margin: 0px auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: #e2504c;
+    height: 40px;
+    width: 100%;
+    text-align: center;
+    line-height: 40px;
+    color: black;
+}
+
+.barradeanuncio{
+    font-size: 12px; 
+    font-weight: bold;
+    color: white;
+}
+
+.nav-main a{
+    color: black;
+}
+
+nav ul li {
+    float: left;
+    margin: 20px 30px;
+    line-height: 200px;
+    position: relative;
+    left: 17%;
+
+
+}
+section{
+    max-width: 1500px; /*Máximo ancho que se puede ver*/
+}
+
+.nav-main ul li a {
+    padding: 6px;
+    font-size: 17px; 
+}
+
+.nav-main ul li a:hover{
+    border-bottom: 2px solid black;
+}
+
+.clearfix{
+    clear: both;
+}
+
+.slider{
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+.slider ul{
+    display: flex;
+    padding: 0;
+    width: 300%; /*El porcentaje depende de cuantas img se usen cada 1 img son 100%*/
+    animation: cambio 20s infinite; /*Duracion de la animacion*/
+    animation-direction: initial; 
+}
+
+.slider li{
+    width: 100%;
+}
+
+.slider img{
+    width: 900px;
+    height: 400px;
+    object-fit: cover;
+}
+
+@keyframes cambio{
+    0%{ margin-left: 0;}
+    35%{ margin-left: 0;}
+/*Para calcular el tiempo de la diapositiva en este caso seria 35= 0.35; 35*0.35= 12.25 seg */
+/*Para calcular el cambio de diapositivas el espacio de 20 a 25 es el tiempo 35-45= 10; 35*.10= 3.5 seg*/
+    45%{ margin-left: -100%;}
+    65%{ margin-left: -100%;}
+
+    75%{ margin-left: -200%;}
+    95%{ margin-left: -200%;}
+}
+
+ul.botones{
+    height: 0px;
+    width: 0px;
+    text-align: center;    
+}
+
+
+
+/*Catalogo*/
+.catalogoinicio{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin: 20px 100px;
+}
+
+.catalogoinicio img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+aside{
+    text-align: center;
+}
+
+footer{
+    background-color: #e2504c;
+}
+
+footer ul li {
+    margin: 10px;
+}
+
+.Pie{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.Redes li{
+    float: left;
+}
+
+.titulofooter{
+    text-align: center;
+    font-size: 15px; 
+    color: white;
+}
+
+.políticasmenu{
+    text-align: center;
+    font-size: 13px;
+    color: black;
+}
+
+.políticasmenu a{
+    color: white;
+}
+
+
+.footercopy{
+    font-size: 11px; 
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: #e2504c;
+}
+
+
+
+
+/*Archivo Playeras*/
+.catalogo{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin: 20px 240px;
+    color: black;
+    text-align: center;
+}
+
+.catalogo img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+
+
+
+/*Archivo Terminos*/
+.terminos{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    text-align: justify;
+    width: 80%;
+    margin: 0 10%;
+}
+
+.Infogral{
+    font-size: 25px;
+}
+
+.Secciones{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/*Archivo Preguntas Frecuentes*/
+.PreguntasFrecuentes {
+    text-align: justify;
+    width: 80%;
+    margin: 0 10%
+}
+
+.Preguntas{
+    font-size: 20px; 
+    font-weight: bold;
+}
+
+.Respuestas{
+    font-size: 15px;
+}
+
+article{
+    color: black;
+}
+
+
+/*Archivo Blog*/
+.Blog{
+    text-align: center;
+}
+
+
+/*Archivo ¿Quiénes Somos?*/
+.QuiénesSomos{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    text-align: justify;
+    width: 80%;
+    margin: 0 10%;
+}
+
+.mostrador {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 90px;
+    padding: 0 30px;
+    padding-bottom: 50px;
+    color: black;
+}
+
+.mostradorimg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Nombreart{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 28px; 
+    margin: 10px 0; 
+    width: 70%; 
+}
+
+.texto{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 19px; 
+    margin: 10px 0; 
+    width: 70%; 
+}
+
+.precio{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 28px;
+}
+
+.GuiaTallas{
+    font-size: 14px;
+    margin-left: 10px;
+}
+.TituloGuiaTallas{
+    font-size: 14px;
+    margin-left: 10px;
+}
+.radio{
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: capitalize;
+    display: inline-block;
+    vertical-align: middle;
+    color: black;
+    position: relative;
+    padding-left: 30px;
+}
+
+.radio + .radio{
+    margin-left: 20px;
+}
+
+.radio input[type="radio"]{
+    display: none;
+}
+
+.radio span{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 3px solid black;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0px;
+}
+
+.radio span:after{
+    content: "";
+    height: 15px;
+    width: 15px;
+    background: #e2504c;
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    border-radius: 50%;
+    transition: 300ms ease-in-out 0s;
+}
+
+.radio input[type="radio"]:checked ~ span::after{
+    transform: translate(-50%,-50%) scale(1);
+}
+
+
+
+.tallas img {
+    text-align: center;
+    object-fit: cover;
+}
